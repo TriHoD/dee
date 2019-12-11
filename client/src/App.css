@@ -47,3 +47,8 @@
   width: 400px;
   margin: auto;
 }
+
+.ui.pink.button:focus,
+.ui.pink.buttons .button:focus {
+  background-color: #e03997;
+}
