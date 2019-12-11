@@ -87,7 +87,7 @@ function SinglePost(props) {
                                 )}
                             </Card.Content>
                         </Card>
-                        {user && (
+                        {/* {user && (
                             <Card fluid>
                                 <Card.Content>
                                     <p>Post a comment</p>
@@ -113,7 +113,7 @@ function SinglePost(props) {
                                     </Form>
                                 </Card.Content>
                             </Card>
-                        )}
+                        )} */}
                         {comments.map(comment => (
                             <Card fluid key={comment.id}>
                                 <Card.Content>
