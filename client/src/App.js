@@ -12,6 +12,7 @@ import MenuBar from './components/menubar/menubar'
 import Home from './components/home/home';
 import Login from './components/login/login';
 import Register from './components/register/register';
+import SinglePost from './components/singlepost/singlePost'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <AuthRoute exact path='/login' component={Login} />
           <AuthRoute exact path='/register' component={Register} />
-          {/* <Route exact path="/posts/:postId" component={SinglePost} /> */}
+          <Route exact path="/posts/:postId" component={SinglePost} />
         </Container>
       </Router>
     </AuthProvider>
