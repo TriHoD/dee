@@ -44,8 +44,8 @@ function AuthProvider(props) {
     function login(userData) {
         localStorage.setItem('jwtToken', userData.token);
         dispatch({
-        type: 'LOGIN',
-        payload: userData
+            type: 'LOGIN',
+            payload: userData
         });
     }
 
@@ -56,8 +56,8 @@ function AuthProvider(props) {
 
     return (
         <AuthContext.Provider
-        value={{ user: state.user, login, logout }}
-        {...props}
+            value={{ user: state.user, login, logout }}
+            {...props}
         />
     );
 }
