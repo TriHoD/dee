@@ -11,10 +11,6 @@ function PostCard({post: { body, createdAt, id, username, likeCount, commentCoun
     
     const { user } = useContext(AuthContext);
 
-    function commentOnPost() {
-        console.log('Comment on post!')
-    }
-
     return (
         <Card fluid>
             <Card.Content>
@@ -31,7 +27,7 @@ function PostCard({post: { body, createdAt, id, username, likeCount, commentCoun
             </Card.Content>
             <Card.Content extra>
                 <LikeButton user={user} post={{ id, likes, likeCount }} />
-                <Button as='div' labelPosition='right' as={Link} to={`/posts/${id}`}>
+                <Button labelPosition='right' as={Link} to={`/posts/${id}`}>
                     <Button color='blue' basic>
                         <Icon name='comments' />
                     </Button>
